@@ -6,6 +6,23 @@
 <title>For You ♡</title>
 
 <style>
+  /* Animasi font halaman depan */
+.animated-font {
+  animation: fadeTyping 3s ease-in-out infinite alternate;
+  font-weight: bold;
+}
+
+@keyframes fadeTyping {
+  from {
+    opacity: 0.4;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -141,7 +158,7 @@ body{
   25%{transform:translateX(-8px)}50%{transform:translateX(8px)}
   75%{transform:translateX(-6px)}
 }
-</style>
+</style> 
 </head>
 
 <body>
@@ -149,7 +166,7 @@ body{
 <button class="music" onclick="toggleMusic()" title="Musik">♪</button>
 
 <section class="page active" id="intro">
-  <div class="intro">
+  <div class="animated-font">
     <div class="small">I made this website just for u</div>
     <h1>"ZAHRA AULIA BADJEBER"</h1>
     <div class="hint">tap anywhere to continue</div>
@@ -268,9 +285,9 @@ function closeModal(){
 
 function answer(type){
   if(type==="yes"){
-    alert("Hehe... makasih sudah mau kasih kesempatan 🤍");
+    alert("hehe... makasih sudah mau kasih kesempatan ");
   }else{
-    alert("Nggak apa-apa, pikirkan pelan-pelan ya 🌷");
+    alert("ngga apa-apa, pikirkan pelan-pelan ya ");
   }
 }
 
